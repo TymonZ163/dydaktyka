@@ -1,11 +1,130 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <title>Formularz - Zawadzki</title>
+<meta charset="UTF-8">
+<title>Formularz rekrutacyjny do drużyny e-sportowej</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #fdfdfd;
+    margin: 30px;
+  }
+  h1 {
+    text-align: center;
+  }
+  form {
+    width: 800px;
+    margin: auto;
+    border: 2px solid #000;
+    padding: 20px 40px;
+    background-color: white;
+  }
+  .row {
+    display: flex;
+    justify-content: space-between;
+  }
+  .column {
+    width: 48%;
+  }
+  label {
+    display: block;
+    margin: 5px 0;
+  }
+  input[type=text],
+  input[type=number],
+  input[type=password],
+  textarea {
+    width: 95%;
+    padding: 5px;
+    margin: 3px 0 10px 0;
+    border: 1px solid #999;
+    border-radius: 4px;
+  }
+  textarea {
+    height: 80px;
+    resize: none;
+  }
+  input[type=checkbox] {
+    margin-right: 5px;
+  }
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  input[type=submit],
+  input[type=reset] {
+    width: 100px;
+    padding: 8px;
+    border: 1px solid #000;
+    background-color: #f2f2f2;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  input[type=submit]:hover,
+  input[type=reset]:hover {
+    background-color: #ddd;
+  }
+</style>
 </head>
 <body>
-    <h1>Tutaj będzie formularz</h1>
-    <a href="index.html">Wróć do strony głównej</a>
+
+<h1>Formularz rekrutacyjny do drużyny e-sportowej</h1>
+
+<form>
+  <div class="row">
+    <!-- Lewa kolumna -->
+    <div class="column">
+      <label>Imię:<br><input type="text" name="imie"></label>
+      <label>Nazwisko:<br><input type="text" name="nazwisko"></label>
+      <label>Nick:<br><input type="text" name="nick"></label>
+
+      <h3>Ulubiona gra:</h3>
+      <label><input type="checkbox" name="gra" value="CS2">Counter-Strike 2</label>
+      <label><input type="checkbox" name="gra" value="Valorant">Valorant</label>
+      <label><input type="checkbox" name="gra" value="Fortnite">Fortnite</label>
+      <label><input type="checkbox" name="gra" value="Apex Legends">Apex Legends</label>
+      <label><input type="checkbox" name="gra" value="Inna">Inna: <input type="text" name="inna_gra"></label>
+
+      <h3>Doświadczenie e-sportowe:</h3>
+      <label><input type="checkbox" name="dosw" value="druzyna">Grałem/am w drużynie e-sportowej</label>
+      <label><input type="checkbox" name="dosw" value="turnieje">Turnieje online</label>
+      <label><input type="checkbox" name="dosw" value="rekreacyjne">Tylko gry rekreacyjne</label>
+      <label><input type="checkbox" name="dosw" value="inne">Inne: <input type="text" name="inne_dosw"></label>
+    </div>
+
+    <!-- Prawa kolumna -->
+    <div class="column">
+      <label>Wiek:<br><input type="number" name="wiek" min="10" max="99"></label>
+      <label>Kraj zamieszkania:<br><input type="text" name="kraj"></label>
+
+      <h3>Gdzie grasz najczęściej?</h3>
+      <label><input type="checkbox" name="region" value="Europa">Europa</label>
+      <label><input type="checkbox" name="region" value="Ameryka">Ameryka</label>
+      <label><input type="checkbox" name="region" value="Azja">Azja</label>
+      <label><input type="checkbox" name="region" value="Inna">Inna: <input type="text" name="inna_strefa"></label>
+
+      <h3>Konta gamingowe:</h3>
+      <label><input type="checkbox" name="konto" value="Steam">Steam</label>
+      <label><input type="checkbox" name="konto" value="Epic Games">Epic Games</label>
+      <label><input type="checkbox" name="konto" value="Riot ID">Riot ID</label>
+      <label><input type="checkbox" name="konto" value="Battle.net">Battle.net</label>
+      <label><input type="checkbox" name="konto" value="Inne">Inne: <input type="text" name="inne_konto"></label>
+    </div>
+  </div>
+
+  <h3>Dlaczego chciał(a)byś dołączyć do naszej drużyny?</h3>
+  <textarea name="motywacja"></textarea>
+
+  <label>Hasło do formularza:<br>
+    <input type="password" name="haslo">
+  </label>
+
+  <div class="buttons">
+    <input type="reset" value="Reset">
+    <input type="submit" value="Submit">
+  </div>
+</form>
+
 </body>
 </html>
