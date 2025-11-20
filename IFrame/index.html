@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <title>Layout – Tymon Zawadzki</title>
+  <link rel="icon" href="favicon.png" type="image/png">
+</head>
+<body>
+  <table width="65%" border="1" align="center">
+    <!-- NAGŁÓWEK -->
+    <tr>
+      <td colspan="3">
+        <iframe scrolling="no" width="900" height="100" name="obszar_logo" src="logo_zawadzki.html" frameborder="0"></iframe>
+      </td>
+    </tr>
+    <tr>
+      <!-- OKNO 1 (menu lewe) -->
+      <td width="18%" align="center">
+        <b>lewe menu</b>
+        <ul>
+          <li><a href="https://zse.edu.gdansk.pl/" target="obszar_glowny">Strona ZSE</a></li>
+          <li><a href="https://www.kuratorium.gda.pl/" target="obszar_glowny">Kuratorium</a></li>
+          <li><a href="https://www.wikipedia.org/" target="obszar_glowny">Wikipedia</a></li>
+          <li><a href="https://www.gdansk.pl/" target="obszar_glowny">Miasto Gdańsk</a></li>
+        </ul>
+      </td>
+
+      <!-- OKNO 2 (obszar główny) -->
+      <td align="center">
+        <iframe width="650" height="420" name="obszar_glowny" src="glowny_zawadzki.html" frameborder="0"></iframe>
+      </td>
+
+      <!-- OKNO 3 (menu prawe) -->
+       <td width="18%" align="center" valign="top">
+    <b>prawe menu</b><br><br>
+    
+    <img src="mapa.gif" width="100" height="300" alt="Menu graficzne" usemap="#mapa_zawadzki" style="border:0;">
+
+    <map name="mapa_zawadzki">
+        
+        <area shape="circle" coords="48,30,25" href="mojplik.zip" download alt="Ściągnij plik" title="Kliknij, aby ściągnąć plik">
+
+        <area shape="rect" coords="32,60,67,115" href="tabela_zawadzki.html" target="obszar_glowny" alt="Tabela" title="Kliknij, aby zobaczyć tabelę">
+
+        <area shape="circle" coords="48,152,25" href="formularz_zawadzki.html" target="obszar_glowny" alt="Formularz" title="Kliknij, aby zobaczyć formularz">
+
+        <area shape="rect" coords="32,187,64,236" href="poczta_zawadzki.html" target="obszar_glowny" alt="Poczta" title="Kliknij, aby wysłać pocztę">
+
+        <area shape="poly" coords="47,250, 71,291, 23,291" href="zad_1_6.html" target="obszar_glowny" alt="Zadania" title="Kliknij, aby zobaczyć zadania od Z1 do Z6">
+
+    </map>
+</td>
+    </tr>
+
+    <!-- STOPKA -->
+    <tr>
+      <td colspan="3">
+        <iframe scrolling="no" width="900" height="90" name="obszar_stopka" src="stopka_zawadzki.html" frameborder="0"></iframe>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
