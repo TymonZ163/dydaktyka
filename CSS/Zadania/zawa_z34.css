@@ -1,6 +1,14 @@
-h3{
+/* Tymon Zawadzki, 1P gr2*/
+
+h3 {
+    position: absolute;
+    top: 320px;
+    right: 20px;
     width: 300pt;
     height: 4cm;
-    border-color: rgb(255, 255, 224);
-    border-style: ridge;
+    border: 6px ridge #800080;
+    padding: 15px;
+    background: rgb(253, 253, 82);
+    font-size: x-large;
+    box-sizing: border-box;
 }
